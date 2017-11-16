@@ -1,0 +1,91 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CloudSlang",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "source.yaml"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"match": "(#!)(\\s*)(@(description|prerequisites):)(.*)",
+				"name": "comment",
+				"captures": {
+					"4": {
+						"name": "underline"
+					}
+				}
+			},
+			{
+				"match": "(#!)(\\s*)(@(input|output|result))(\\s+)(\\w+:)(.*)",
+				"name": "comment",
+				"captures": {
+					"3": {
+						"name": "underline"
+					},
+					"6": {
+						"name": "constant"
+					}
+				}
+			},
+			{
+				"match": "(#!)(\\s*)(@(input|output|result))(\\s+)(\\w+)",
+				"name": "comment",
+				"captures": {
+					"3": {
+						"name": "underline"
+					},
+					"6": {
+						"name": "constant"
+					}
+				}
+			},
+			{
+				"begin": "^(\\s*)(?:(-)|(?:(-(\\s*))?((namespace|imports|flow|name|inputs|workflow|do|publish|navigate|outputs|results|operation|decision|python_action|dependencies|java_action|gav|parallel_loop|loop|for|break|class_name|method_name|script|on_failure|properties|extensions)\\s*(:))))\\s*(\\||>)",
+				"beginCaptures": {
+					"5": {
+						"name": "keyword"
+					}
+				},
+				"end": "^(?!\\1 \\4\\s+)(?=\\s*(-|\\S+\\s*:|#))",
+				"name": "string.unquoted.block.yaml"
+			},
+			{
+				"match": "(\\s*)(-\\s*)?((namespace|imports|flow|name|inputs|workflow|do|publish|navigate|outputs|results|operation|decision|python_action|dependencies|java_action|gav|parallel_loop|loop|for|break|class_name|method_name|script|on_failure|properties|extensions)(:))([^#\\n]*)(#.*)?\\n",
+				"captures": {
+					"2": {
+						"name": "string.unquoted.block.yaml"
+					},
+					"3": {
+						"name": "keyword"
+					},
+					"6": {
+						"name": "string.unquoted.block.yaml"
+					},
+					"7": {
+						"name": "comment"
+					}
+				}
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cloudslang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cloudslang",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.sl"
+}
