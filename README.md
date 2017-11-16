@@ -8,9 +8,7 @@ VSCode language support for [CloudSlang](http://www.cloudslang.io/#/).
 
 1. Download and install [VSCode](https://code.visualstudio.com/).
 2. Download and install the CloudSlang language package.
-
-  * From the VSCode UI: Go to the **Install Extension** pane and search for 'language-cloudslang'
-
+   * From the VSCode UI: Go to the **Install Extension** pane and search for 'language-cloudslang'
 3. Restart VSCode.
 4. Files saved with the **.sl** extension will be recognized within Atom as
    CloudSlang files.
