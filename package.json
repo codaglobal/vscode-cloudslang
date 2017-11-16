@@ -1,0 +1,40 @@
+{
+    "name": "vscode-cloudslang",
+    "version": "0.0.1",
+    "displayName": "CloudSlang Language",
+    "description": "CloudSlang Language Support",
+    "keywords": [
+        "automation",
+        "devops",
+        "orchestration",
+        "language",
+        "grammar"
+    ],
+    "license": "Apache v2.0",
+    "homepage": "http://atom.github.io/language-cloudslang",
+    "publisher": "scott",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cloudslang",
+            "aliases": ["CloudSlang", "cloudslang"],
+            "extensions": ["sl","sl.yml","sl.yaml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cloudslang",
+            "scopeName": "source.sl",
+            "path": "./syntaxes/cloudslang.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "cloudslang",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
