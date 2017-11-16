@@ -32,11 +32,11 @@
       "body": "#! @result ${1:result_name}: ${2:result_description}"
     },
     "java action": {
-      "prefix": "java action",
+      "prefix": "java_action",
       "body": "java_action:\n  gav: '${1:group}:${2:artifact}:${3:version}'\n  class_name: ${4:java_class_name}\n  method_name: ${5:java_method_name}"
     },
     "python action": {
-      "prefix": "python action",
+      "prefix": "python_action",
       "body": "python_action:\n  dependencies:\n      - '${1:group1}:${2:artifact1}:${3:version1}'\n      - '${4:group2}:${5:artifact2}:${6:version2}'\n  script: ${7:python_script}"
     },
     "simple input": {
@@ -44,7 +44,7 @@
       "body": "- ${1:input_name}: ${2:input_value}"
     },
     "input with properties": {
-      "prefix": "input with properties",
+      "prefix": "input_with_properties",
       "body": "- ${1:input_name}:\n    required: ${2:true|false}\n    default: ${3:default_value}\n    private: ${4:true|false}\n    sensitive: ${5:true|false}"
     },
     "output": {
