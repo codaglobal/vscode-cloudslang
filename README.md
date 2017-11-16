@@ -18,7 +18,7 @@ VSCode language support for [CloudSlang](http://www.cloudslang.io/#/).
 
 Files saved with **.sl** extension will reflect CloudSlang syntax highlighting.
 
-![logo](https://i.imgur.com/PSVWgNW.png?1) 
+![logo](https://i.imgur.com/0lRzkkJ.png?1) 
 
 ## Snippets
 Start typing the snippet name and press tab or enter when it appears on the screen.
