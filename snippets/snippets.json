@@ -1,15 +1,115 @@
 {
     "Flow": {
       "prefix": "flow",
-      "body": "####################################################\n#!!\n#! @description: ${19:Flow_description}\n#!\n#! @input ${5:input_name}: ${20:input_description}\n#!                    ${21:input_description}\n#! @input ${7:input_name}: ${22:input_description}\n#! @output ${16:output_name}: ${23:output_description}\n#! @result ${18:result_name}: ${24:result_description}\n#!!#\n####################################################\n\nnamespace: ${1:current.namespace}\n\nimports:\n  ${2:import_name}: ${3:import.namespace}\n\nflow:\n  name: ${4:flow_name}\n\n  inputs:\n    - ${5:input_name}: ${6:input_value}\n    - ${7:input_name}: ${8:input_value}\n\n  workflow:\n    - ${9:step_name}:\n        do:\n          ${10:executable_name}:\n            - ${11:executable_argument}\n        publish:\n          - ${12:publish_name}: ${13:publish_value}\n        navigate:\n          - ${14:executable_result_name}: ${15:navigate_to}\n\n  outputs:\n    - ${16:output_name}: ${17:output_value}\n\n  results:\n    - ${18:result_name}"
+      "body": [
+        "####################################################",
+				"#!!",
+				"#! @description: ${19:Flow_description}",
+				"#!",
+				"#! @input ${5:input_name}: ${20:input_description}",
+				"#!                    ${21:input_description}",
+				"#! @input ${7:input_name}: ${22:input_description}",
+				"#! @output ${16:output_name}: ${23:output_description}",
+				"#! @result ${18:result_name}: ${24:result_description}",
+				"#!!#",
+				"####################################################",
+				"",
+				"namespace: ${1:current.namespace}",
+				"",
+				"imports:",
+				"  ${2:import_name}: ${3:import.namespace}",
+				"",
+				"flow:",
+				"  name: ${4:flow_name}",
+				"",
+				"  inputs:",
+				"    - ${5:input_name}: ${6:input_value}",
+				"    - ${7:input_name}: ${8:input_value}",
+				"",
+				"  workflow:",
+				"    - ${9:step_name}:",
+				"        do:",
+				"          ${10:executable_name}:",
+				"            - ${11:executable_argument}",
+				"        publish:",
+				"          - ${12:publish_name}: ${13:publish_value}",
+				"        navigate:",
+				"          - ${14:executable_result_name}: ${15:navigate_to}",
+				"",
+				"  outputs:",
+				"    - ${16:output_name}: ${17:output_value}",
+				"",
+				"  results:",
+        "    - ${18:result_name}"
+      ]
     },
     "Decision": {
       "prefix": "decision",
-      "body": "####################################################\n#!!\n#! @description: ${11:Operation_description}\n#!\n#! @input ${12:input_name}: ${13:input_description}\n#!                    ${14:input_description}\n#! @input ${15:input_name}: ${16:input_description}\n#! @output ${17:output_name}: ${18:output_description}\n#! @result ${19:result_name}: ${20:result_description}\n#!!#\n####################################################\n\nnamespace: ${1:current.namespace}\n\ndecision:\n  name: ${2:decision_name}\n\n  inputs:\n    - ${3:input_name}: ${4:input_value}\n    - ${5:input_name}: ${6:input_value}\n\n  outputs:\n    - ${7:output_name}: ${8:output_value}\n\n  results:\n    - ${9:result_name}: ${10:result_condition}"
+      "body": [
+        "####################################################",
+				"#!!",
+				"#! @description: ${11:Operation_description}",
+				"#!",
+				"#! @input ${12:input_name}: ${13:input_description}",
+				"#!                    ${14:input_description}",
+				"#! @input ${15:input_name}: ${16:input_description}",
+				"#! @output ${17:output_name}: ${18:output_description}",
+				"#! @result ${19:result_name}: ${20:result_description}",
+				"#!!#",
+				"####################################################",
+				"",
+				"namespace: ${1:current.namespace}",
+				"",
+				"decision:",
+				"  name: ${2:decision_name}",
+				"",
+				"  inputs:",
+				"    - ${3:input_name}: ${4:input_value}",
+				"    - ${5:input_name}: ${6:input_value}",
+				"",
+				"  outputs:",
+				"    - ${7:output_name}: ${8:output_value}",
+				"",
+				"  results:",
+        "    - ${9:result_name}: ${10:result_condition}"
+      ]
     },
     "Operation": {
       "prefix": "operation",
-      "body": "####################################################\n#!!\n#! @description: ${14:Operation_description}\n#!\n#! @input ${5:input_name}: ${15:input_description}\n#!                    ${16:input_description}\n#! @input ${7:input_name}: ${17:input_description}\n#! @output ${10:output_name}: ${18:output_description}\n#! @result ${12:result_name}: ${19:result_description}\n#!!#\n####################################################\n\nnamespace: ${1:current.namespace}\n\noperation:\n  name: ${4:operation_name}\n\n  inputs:\n    - ${5:input_name}: ${6:input_value}\n    - ${7:input_name}: ${8:input_value}\n\n  python_action:\n    dependencies:\n        - '${9:group1}:${10:artifact1}:${11:version1}'\n        - '${12:group2}:${13:artifact2}:${14:version2}'\n    script: ${15:python_script}\n\n  outputs:\n    - ${16:output_name}: ${17:output_value}\n\n  results:\n    - ${18:result_name}: ${19:result_condition}"
+      "body": [
+        "####################################################",
+				"#!!",
+				"#! @description: ${14:Operation_description}",
+				"#!",
+				"#! @input ${5:input_name}: ${15:input_description}",
+				"#!                    ${16:input_description}",
+				"#! @input ${7:input_name}: ${17:input_description}",
+				"#! @output ${10:output_name}: ${18:output_description}",
+				"#! @result ${12:result_name}: ${19:result_description}",
+				"#!!#",
+				"####################################################",
+				"",
+				"namespace: ${1:current.namespace}",
+				"",
+				"operation:",
+				"  name: ${4:operation_name}",
+				"",
+				"  inputs:",
+				"    - ${5:input_name}: ${6:input_value}",
+				"    - ${7:input_name}: ${8:input_value}",
+				"",
+				"  python_action:",
+				"    dependencies:",
+				"        - '${9:group1}:${10:artifact1}:${11:version1}'",
+				"        - '${12:group2}:${13:artifact2}:${14:version2}'",
+				"    script: ${15:python_script}",
+				"",
+				"  outputs:",
+				"    - ${16:output_name}: ${17:output_value}",
+				"",
+				"  results:",
+        "    - ${18:result_name}: ${19:result_condition}"
+      ]
     },
     "@input tag": {
       "prefix": "@input",
@@ -33,11 +133,22 @@
     },
     "java action": {
       "prefix": "java_action",
-      "body": "java_action:\n  gav: '${1:group}:${2:artifact}:${3:version}'\n  class_name: ${4:java_class_name}\n  method_name: ${5:java_method_name}"
+      "body": [
+        "java_action:",
+				"  gav: '${1:group}:${2:artifact}:${3:version}'",
+				"  class_name: ${4:java_class_name}",
+        "  method_name: ${5:java_method_name}"
+      ]
     },
     "python action": {
       "prefix": "python_action",
-      "body": "python_action:\n  dependencies:\n      - '${1:group1}:${2:artifact1}:${3:version1}'\n      - '${4:group2}:${5:artifact2}:${6:version2}'\n  script: ${7:python_script}"
+      "body": [
+        "python_action:",
+				"  dependencies:",
+				"      - '${1:group1}:${2:artifact1}:${3:version1}'",
+				"      - '${4:group2}:${5:artifact2}:${6:version2}'",
+        "  script: ${7:python_script}"
+      ]
     },
     "simple input": {
       "prefix": "input",
@@ -45,7 +156,13 @@
     },
     "input with properties": {
       "prefix": "input_with_properties",
-      "body": "- ${1:input_name}:\n    required: ${2:true|false}\n    default: ${3:default_value}\n    private: ${4:true|false}\n    sensitive: ${5:true|false}"
+      "body": [
+        "- ${1:input_name}:",
+				"    required: ${2:true|false}",
+				"    default: ${3:default_value}",
+				"    private: ${4:true|false}",
+        "    sensitive: ${5:true|false}"
+      ]
     },
     "output": {
       "prefix": "output",
@@ -53,7 +170,11 @@
     },
     "output with properties": {
       "prefix": "output",
-      "body": "- ${1:output_name}:\n    value: ${2:output_value}\n    sensitive: ${3:sensitive_value}"
+      "body": [
+        "- ${1:output_name}:",
+				"    value: ${2:output_value}",
+        "    sensitive: ${3:sensitive_value}"
+      ]
     },
     "result": {
       "prefix": "result",
@@ -73,23 +194,69 @@
     },
     "step": {
       "prefix": "step",
-      "body": "- ${1:step_name}:\n    do:\n      ${2:executable_name}:\n        - ${3:executable_argument}\n    publish:\n      - ${4:publish_name}: ${5:publish_value}\n    navigate:\n      - ${6:executable_result_name}: ${7:navigate_to}"
+      "body": [
+        "- ${1:step_name}:",
+				"    do:",
+				"      ${2:executable_name}:",
+				"        - ${3:executable_argument}",
+				"    publish:",
+				"      - ${4:publish_name}: ${5:publish_value}",
+				"    navigate:",
+        "      - ${6:executable_result_name}: ${7:navigate_to}"
+      ]
     },
     "on failure": {
       "prefix": "on_failure",
-      "body": "- on_failure:\n  - ${1:step_name}:\n      do:\n        ${2:executable_name}:\n          - ${3:executable_argument}\n      publish:\n        - ${4:publish_name}: ${5:publish_value}"
+      "body": [
+        "- on_failure:",
+				"  - ${1:step_name}:",
+				"      do:",
+				"        ${2:executable_name}:",
+				"          - ${3:executable_argument}",
+				"      publish:",
+        "        - ${4:publish_name}: ${5:publish_value}"
+      ]
     },
     "for": {
       "prefix": "for",
-      "body": "- ${1:step_name}:\n    loop:\n      for: ${2:iteration_statement}\n      do:\n        ${3:executable_name}:\n          - ${4:executable_argument}\n      publish:\n        - ${5:publish_name}: ${6:publish_value}\n      break:\n        - ${7:result_name}\n    navigate:\n      - ${8:executable_result_name}: ${9:navigate_to}"
+      "body": [
+        "- ${1:step_name}:",
+				"    loop:",
+				"      for: ${2:iteration_statement}",
+				"      do:",
+				"        ${3:executable_name}:",
+				"          - ${4:executable_argument}",
+				"      publish:",
+				"        - ${5:publish_name}: ${6:publish_value}",
+				"      break:",
+				"        - ${7:result_name}",
+				"    navigate:",
+        "      - ${8:executable_result_name}: ${9:navigate_to}"
+      ]
     },
     "parallel_loop": {
       "prefix": "parallel_loop",
-      "body": "- ${1:step_name}:\n    parallel_loop:\n      for: ${2:iteration_statement}\n      do:\n        ${3:executable_name}:\n          - ${4:executable_argument}\n    publish:\n      - ${5:publish_name}: ${6:publish_value}\n    navigate:\n      - ${7:executable_result_name}: ${8:navigate_to}"
+      "body": [
+        "- ${1:step_name}:",
+				"    parallel_loop:",
+				"      for: ${2:iteration_statement}",
+				"      do:",
+				"        ${3:executable_name}:",
+				"          - ${4:executable_argument}",
+				"    publish:",
+				"      - ${5:publish_name}: ${6:publish_value}",
+				"    navigate:",
+        "      - ${7:executable_result_name}: ${8:navigate_to}"
+      ]
     },
     "Prop file": {
       "prefix": "properties",
-      "body": "namespace: ${1:current.namespace}\n\nproperties:\n  - ${2:property_key}: ${3:property_value}"
+      "body": [
+        "namespace: ${1:current.namespace}",
+				"",
+				"properties:",
+        "  - ${2:property_key}: ${3:property_value}"
+      ]
     },
     "Prop entry": {
       "prefix": "property",
@@ -97,6 +264,10 @@
     },
     "Prop entry with properties": {
       "prefix": "property",
-      "body": "- ${1:property_key}:\n      value: ${2:property_value}\n      sensitive: ${3:sensitive_value}"
+      "body": [
+        "- ${1:property_key}:",
+				"      value: ${2:property_value}",
+        "      sensitive: ${3:sensitive_value}"
+      ]
     }
   }
