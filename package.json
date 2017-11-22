@@ -11,6 +11,7 @@
         "grammar"
     ],
     "license": "Apache v2.0",
+    "icon": "images/cloudslang-icon.png",
     "homepage": "http://atom.github.io/language-cloudslang",
     "publisher": "MicroFocus",
     "engines": {
