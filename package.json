@@ -12,7 +12,7 @@
     ],
     "license": "Apache v2.0",
     "homepage": "http://atom.github.io/language-cloudslang",
-    "publisher": "scott",
+    "publisher": "MicroFocus",
     "engines": {
         "vscode": "^1.18.0"
     },
