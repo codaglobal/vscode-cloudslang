@@ -8,9 +8,8 @@
 
 This repository contains a VSCode plugin for [CloudSlang](http://www.cloudslang.io/#/).
 
-| Travis CI| Rating | Test coverage | Chat| 
-| ----- | ----- | ----- | ----- | ----- |
-| |  |  | [![Gitter](https://badges.gitter.im/CloudSlang/cs-vscode.svg)](https://gitter.im/CloudSlang/cs-vscode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  |
+##
+[![Gitter](https://badges.gitter.im/CloudSlang/cs-vscode.svg)](https://gitter.im/CloudSlang/cs-vscode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
 
 
 # Download, Install and Configure VSCode
