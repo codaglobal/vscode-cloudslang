@@ -1,16 +1,24 @@
-# vscode-cloudslang
+<a href="http://cloudslang.io/">
+    <img src="https://camo.githubusercontent.com/ece898cfb3a9cc55353e7ab5d9014cc314af0234/687474703a2f2f692e696d6775722e636f6d2f696849353630562e706e67" alt="CloudSlang logo" title="CloudSlang" align="left" height="60"/>
+</a>
 
-VSCode language support for [CloudSlang](http://www.cloudslang.io/#/).
+<a href="https://developer.couchbase.com/documentation/server/current/introduction/intro.html/">
+    <img src="https://user-images.githubusercontent.com/410792/31419678-a45ed408-ae6f-11e7-8e06-282c9d668472.png" alt="VSCode logo" title="Visual Studio Code" align="right" height="80"/>
+</a>
 
-![logo](https://i.imgur.com/ihI560V.png)
+This repository contains a VSCode plugin for [CloudSlang](http://www.cloudslang.io/#/).
 
-## Download, Install and Configure VSCode
+##
+[![Gitter](https://badges.gitter.im/CloudSlang/cs-vscode.svg)](https://gitter.im/CloudSlang/cs-vscode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
+
+
+# Download, Install and Configure VSCode
 
 1. Download and install [VSCode](https://code.visualstudio.com/).
 2. Download and install the CloudSlang language package.
    * From the VSCode UI: Go to the **Install Extension** pane and search for 'cloudslang'
 3. Restart VSCode.
-4. Files saved with the **.sl** extension will be recognized within Visual Studio as
+4. Files saved with the **.sl** extension will be recognized within Visual Studio Code as
    CloudSlang files.
 
 
@@ -53,5 +61,20 @@ property with properties | template for a system property with all possible prop
 @output | template for output documentation
 @result | template for result documentation
 
-## Troubleshooting
+### Troubleshooting
 For troubleshooting VSCode issues, see the VSCode [documentation](https://code.visualstudio.com/docs) and [community](https://code.visualstudio.com/community).
+
+
+#### Open Source Project
+
+| [CloudSlang Project website](http://cloudslang.io/#/) | [CloudSlang Content source code](https://github.com/CloudSlang/cloud-slang-content) | [CloudSlang Documentation](http://cloudslang-docs.readthedocs.io/en/latest/) |
+
+#### Documentation
+
+All documentation is available on the [CloudSlang website](http://www.cloudslang.io/#/docs).
+
+#### Get Involved
+
+Read our Contribution Guide [here](CONTRIBUTING.md).
+
+Contact us at ooos@microfocus.com.
